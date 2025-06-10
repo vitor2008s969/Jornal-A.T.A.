@@ -570,3 +570,5 @@ body {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
   }
+<link rel="stylesheet" href="assistente-ia.css">
+<script src="assistente-ia.js"></script>
