@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornal A.T.A | Sala do Futuro</title>
+    <link rel="stylesheet" href="estilo-futuro.css">
+    <link rel="icon" href="assets/icons/neon-ata.png">
+    <script src="futuro.js" defer></script>
+</head>
+<body>
+    <!-- Efeito de partículas -->
+    <div id="particles-js"></div>
+    
+    <!-- Interface holográfica -->
+    <div class="hologram-container">
+        <div class="hologram-content">
+            <!-- Cabeçalho futurista -->
+            <header class="neon-header">
+                <div class="neon-logo">
+                    <span class="neon-text" data-text="Jornal A.T.A">Jornal A.T.A</span>
+                    <span class="neon-glow"></span>
+                </div>
+                <p class="subtitle">Sala do Futuro - Edição Holográfica</p>
+                
+                <!-- Menu de navegação high-tech -->
+                <nav class="cyber-nav">
+                    <ul>
+                        <li><a href="#" class="nav-link" data-section="home"><span class="nav-icon">⌂</span> Home</a></li>
+                        <li><a href="#" class="nav-link" data-section="news"><span class="nav-icon">✉</span> Notícias</a></li>
+                        <li><a href="#" class="nav-link" data-section="events"><span class="nav-icon">⚙</span> Eventos</a></li>
+                        <li><a href="#" class="nav-link" data-section="live"><span class="nav-icon">⏵</span> Ao Vivo</a></li>
+                        <li><a href="#" class="nav-link" data-section="dashboard"><span class="nav-icon">🔒</span> Dashboard</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Conteúdo principal futurista -->
+            <main class="holo-grid">
+                <!-- Seção de notícias com efeito 3D -->
+                <section class="holo-card news-section" id="main-news">
+                    <h2 class="cyber-title">Últimas Transmissões</h2>
+                    <div class="news-grid" id="news-container">
+                        <!-- Notícias serão carregadas via JavaScript -->
+                    </div>
+                </section>
+
+                <!-- Widget de eventos interativo -->
+                <section class="holo-card events-section">
+                    <h2 class="cyber-title">Eventos Programados</h2>
+                    <div class="holographic-calendar">
+                        <div class="calendar-header">
+                            <button class="calendar-nav" id="prev-month">◀</button>
+                            <h3 id="current-month">Junho 2025</h3>
+                            <button class="calendar-nav" id="next-month">▶</button>
+                        </div>
+                        <div class="calendar-grid" id="calendar-days">
+                            <!-- Dias serão gerados via JavaScript -->
+                        </div>
+                    </div>
+                    <div class="event-details" id="event-details">
+                        <h4>Selecione um evento</h4>
+                        <div class="event-info" id="selected-event">
+                            <p>Clique em uma data para ver detalhes</p>
+                        </div>
+                        <button class="holo-button" id="add-to-schedule">+ Agenda Digital</button>
+                    </div>
+                </section>
+
+                <!-- Feed ao vivo -->
+                <section class="holo-card live-feed">
+                    <h2 class="cyber-title">Transmissão ao Vivo</h2>
+                    <div class="live-container">
+                        <div class="live-placeholder" id="live-stream">
+                            <p>📡 Conectando ao servidor...</p>
+                            <div class="signal-bars">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                        <div class="live-chat">
+                            <div class="chat-messages" id="chat-messages">
+                                <div class="message system">Sistema: Bem-vindo ao chat da Sala do Futuro!</div>
+                            </div>
+                            <div class="chat-input">
+                                <input type="text" placeholder="Digite sua mensagem..." id="chat-input">
+                                <button id="send-message">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Painel de realidade aumentada -->
+                <section class="holo-card ar-panel">
+                    <h2 class="cyber-title">Realidade Aumentada</h2>
+                    <div class="ar-viewer" id="ar-viewer">
+                        <video autoplay loop muted class="ar-bg">
+                            <source src="assets/images/neural-network.mp4" type="video/mp4">
+                        </video>
+                        <div class="ar-controls">
+                            <button class="ar-btn" data-target="school-map">Mapa 3D</button>
+                            <button class="ar-btn" data-target="timetable">Horários</button>
+                            <button class="ar-btn" data-target="achievements">Conquistas</button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Rodapé futurista -->
+            <footer class="cyber-footer">
+                <div class="footer-grid">
+                    <div class="footer-section">
+                        <h3>Conexões</h3>
+                        <div class="social-holograms">
+                            <a href="#" class="social-icon" data-network="facebook">⎈</a>
+                            <a href="#" class="social-icon" data-network="instagram">⌖</a>
+                            <a href="#" class="social-icon" data-network="youtube">▷</a>
+                            <a href="#" class="social-icon" data-network="twitter">𝕏</a>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Acesso Rápido</h3>
+                        <ul class="quick-links">
+                            <li><a href="#">Portal do Aluno</a></li>
+                            <li><a href="#">Biblioteca Virtual</a></li>
+                            <li><a href="#">Laboratório de IA</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Credenciais</h3>
+                        <div class="login-hologram">
+                            <button id="login-btn" class="holo-button">Login Holográfico</button>
+                            <div class="login-form" id="login-form">
+                                <input type="text" placeholder="ID de Usuário">
+                                <input type="password" placeholder="Senha Neural">
+                                <button class="holo-button confirm">Acessar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>© 2025 Jornal A.T.A | Sala do Futuro v4.2</p>
+                    <p>Desenvolvido por @vitorrodrigues_s com tecnologia quântica</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Efeitos de som futuristas -->
+    <audio id="hover-sound" src="assets/sounds/hover.wav" preload="auto"></audio>
+    <audio id="click-sound" src="assets/sounds/click.wav" preload="auto"></audio>
+    <audio id="notification-sound" src="assets/sounds/notification.wav" preload="auto"></audio>
+
+    <!-- Scripts adicionais -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</body>
+                      </html>
