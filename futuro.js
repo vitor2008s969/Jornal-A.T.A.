@@ -359,3 +359,5 @@ document.querySelectorAll('.ar-btn').forEach(btn => {
         playSound('click-sound');
     });
 });
+<link rel="stylesheet" href="assistente-ia.css">
+<script src="assistente-ia.js"></script>
